@@ -7,8 +7,10 @@
 ## Algorithm
 
 1. Ստեղծում ենք երկու `c + 1` չափի ամբողջական գրաֆներ
-2. Միացնում ենք երկու գրաֆների առաջին `a` գագաթները $$\{ (v_i, u_i) \mid v_i \in G_1, u_i \in G_2, 1 \leq i \leq a \}$$
-3. Միացնում ենք `a`-րդ գագաթը 2-րդ գրաֆի մնացած `b - a` գագաթների հետ $$\{ (v_a, u_i) \mid u_i \in G_2, a + 1 \leq i \leq b \}$$
+2. Միացնում ենք երկու գրաֆների առաջին `a` գագաթները 
+  $$\{ (v_i, u_i) \mid v_i \in G_1, u_i \in G_2, 1 \leq i \leq a \}$$
+3. Միացնում ենք `a`-րդ գագաթը 2-րդ գրաֆի մնացած `b - a` գագաթների հետ 
+  $$\{ (v_a, u_i) \mid u_i \in G_2, a + 1 \leq i \leq b \}$$
 
 ## Installation
 
@@ -25,19 +27,17 @@
 
 ```bash
 git clone git@github.com:GarikHk/graph_task.git
-cd graph-task
 ```
 
-2. Install the required packages:
+2. Go to `./graph-task`
+```bash
+cd ./graph-task
+```
+
+3. Install the required packages:
 
 ```bash
 pip install -r requirements.txt
-```
-
-3. Make the script executable (Linux/Mac):
-
-```bash
-chmod +x graph_tool.py
 ```
 
 ## Usage
@@ -54,7 +54,7 @@ python3 graph_task.py a b c [options]
 - `b`: կողային կապակցվածության թիվը
 - `c`: գրաֆի նվազագույն գագաթի աստիճանը
 
- `a`, `b`, և `c` պարամետրերը պետք է բավարարեն հետևյալ պայմանին: `0 < a ≤ b ≤ c`
+ `a`, `b`, և `c` պարամետրերը պետք է բավարարեն հետևյալ `0 < a ≤ b ≤ c` պայմանին
 
 #### Optional Arguments:
 
@@ -63,16 +63,16 @@ python3 graph_task.py a b c [options]
 
 ### Example
 
-3 գագաթային կապակցվածութուն, 5 կողային կապակցվածություն և 7 նվազագույն գագաթի աստիճան պարունակող գրաֆի օրինակ:
+3 գագաթային կապակցվածություն, 5 կողային կապակցվածություն և 7 նվազագույն գագաթի աստիճան պարունակող գրաֆի օրինակ:
 
 ```bash
-python3 graph_tool.py 3 5 7
+python3 graph_task.py 3 5 7
 ```
 
 Մեկ այլ դասավորության ալգորիթմով:
 
 ```bash
-python3 graph_tool.py 3 5 7 --layout spring
+python3 graph_task.py 3 5 7 --layout spring
 ```
 
 ## License
