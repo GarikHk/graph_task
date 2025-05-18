@@ -32,7 +32,7 @@ def visualize_graph(graph, layout="shell"):
     plt.show()
 
 
-def creat_graph(a, b, c, visualize=True, layout="shell"):
+def create_graph(a, b, c, visualize=True, layout="shell"):
     if not 0 < a <= b <= c:
         print("Invalid Input!")
         return
@@ -73,7 +73,7 @@ def main():
 
     args = parser.parse_args()
 
-    creat_graph(
+    create_graph(
         args.a,
         args.b,
         args.c,
