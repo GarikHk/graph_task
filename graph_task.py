@@ -45,9 +45,8 @@ def creat_graph(a, b, c, visualize=True, layout="shell"):
     for i in range(a):
         combined_graph.add_edge(i, c + 1 + i)
 
-    diff = b - a
-    for j in range(1, diff + 1):
-        combined_graph.add_edge(i, c + 1 + i + j)
+    for j in range(a, b):
+        combined_graph.add_edge(i, c + 1 + j)
 
     # Get Adjacency Matrix
     get_adj_matrix(combined_graph)
